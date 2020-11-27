@@ -1,4 +1,4 @@
-import Logo from ''
+
 
 export default function Nav() {
   return (

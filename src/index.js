@@ -3,8 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import App from './App';
-import Home from './pages/home/home.js'
-import Mural from './pages/mural/mural.js'
+import Home from './pages/Home/Home.js'
+import Login from './pages/Login/Login.js'
+import Mural from './pages/Mural/Mural.js'
+import Explorar from './pages/Explorar/Explorar.js'
+import Config from './pages/Configuracoes/Configuracoes.js'
+import Perfil from './pages/Perfil/Perfil.js'
 import reportWebVitals from './reportWebVitals';
 
 const Routes = (
@@ -12,7 +16,11 @@ const Routes = (
     <div>
       <Switch>
         <Route exact path='/' component={Home}/>
+        <Route exact path='/login' component={Login}/>        
         <Route exact path='/mural' component={Mural}/>
+        <Route exact path='/explorar' component={Explorar}/>
+        <Route exact path='/config' component={Config}/>
+        <Route exact path='/perfil' component={Perfil}/>
       </Switch>
     </div>
   </Router>

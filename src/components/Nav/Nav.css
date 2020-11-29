@@ -34,8 +34,11 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: #F23545;
+    background-color: #d10c1d;
     border-radius: 15px;
+}
+.btn-entrar:hover{
+    background-color: #008296;
 }
 .btn-entrar p{
     margin: 0 0 0 5%;
@@ -45,12 +48,13 @@
     color: #fff;
     line-height: 20px;
 }
-.btn-entrar-icon{
-    fill: #f23545;
-}
 .btn-entrar-icon::before{
+    content: url('../../assets/img/start_btn2.svg');
     position: absolute;
-    top: -2px;
-    bottom: -3px;
-    fill: #fff;
+}
+.btn-entrar-icon:hover::before{
+    display: none;
+}
+.btn-entrar-icon:hover{
+    content: url('../../assets/img/start_btn2.svg');
 }

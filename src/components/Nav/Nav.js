@@ -5,10 +5,10 @@ import { Link as SmoothLink  } from "react-scroll";
 import './Nav.css';
 // imagens
 import Logo from './../../assets/img/comunikae_logo.svg'
-import PlayBtnIcon from './../../assets/img/PlayBtnIcon'
+import StartBtnIcon from './../../assets/img/start_btn.svg'
 // ícones
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCaretRight, faHome, faCompass, faCog, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faCompass, faCog, faUser } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -31,7 +31,9 @@ export default class Nav extends Component{
                       <SmoothLink to="classes" smooth={true} className="nav-link">Classes</SmoothLink>
                     </div>
                     <Link to="/login" className='btn-entrar'>
-                      <div><PlayBtnIcon className='btn-entrar-icon' fill='red'/></div>
+                      <div className='btn-entrar-icon'>
+                        <img src={StartBtnIcon}/>
+                      </div>
                       <p>Entrar no jogo</p>
                     </Link>
                   </div>

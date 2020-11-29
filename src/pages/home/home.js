@@ -6,12 +6,13 @@ export default class Home extends Component{
 render(){
     return (
       <div className="Home">
-        <Nav setar='menu'></Nav>
-        <p>home</p>
-        <section id='sobre'>a</section>
-        <section id='desafios-missao'>a</section>
-        <section id='manual'>a</section>
-        <section id='classes'>a</section>
+        <Nav setar='home'></Nav>
+        <div className='secoes-home'>
+          <section id='sobre'>teste seção sobre</section>
+          <section id='desafios-missao'>teste seção desafios e missao</section>
+          <section id='manual'>teste seção manual</section>
+          <section id='classes'>teste seção classes</section>
+        </div>
       </div>
     );
   }

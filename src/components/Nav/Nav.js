@@ -18,7 +18,7 @@ export default class Nav extends Component{
       <div className="Nav">
           <header>
             <nav className='nav'>
-              {this.props.setar === 'menu' &&
+              {this.props.setar === 'home' &&
                 <div className='nav-container-home'>
                   <div id='links-home'>
                     <Link to="/">
@@ -32,7 +32,7 @@ export default class Nav extends Component{
                     </div>
                     <Link to="/login" className='btn-entrar'>
                       <div className='btn-entrar-icon'>
-                        <img src={StartBtnIcon}/>
+                        <img src={StartBtnIcon} alt='Botão de start'/>
                       </div>
                       <p>Entrar no jogo</p>
                     </Link>
@@ -40,25 +40,49 @@ export default class Nav extends Component{
                 </div>
               }
               
-              {this.props.setar === 'fora-menu' &&
-                <div id='links-logado'>
+              {this.props.setar === 'fora-home' &&
+              <div className='nav-container-fora'>
+                <div id='links-fora'>
                   {/* TODO: alterar as cores pelas props dos icones selecionados  */}
                   <Link to="/">
                     <img src={Logo} alt='Logo do Comunikaê'/>
                   </Link>
-                  <Link to="/mural">
-                    <FontAwesomeIcon icon={faHome} />
-                  </Link>
-                  <Link to="/explorar">
-                    <FontAwesomeIcon icon={faCompass} />
-                  </Link>
-                  <Link to="/config">
-                    <FontAwesomeIcon icon={faCog} />
-                  </Link>
-                  <Link to="/perfil">
-                    <FontAwesomeIcon icon={faUser} />
-                  </Link>
+                  <div className='icons'>
+                    {this.props.mural ? 
+                    <Link to="/mural">
+                      <FontAwesomeIcon icon={faHome} size='lg' color='#F23545'/>
+                    </Link> 
+                    : 
+                    <Link to="/mural">
+                    <FontAwesomeIcon icon={faHome} size='lg' color='#FAABA8'/>
+                    </Link>}
+                    {this.props.explorar ? 
+                    <Link to="/explorar">
+                      <FontAwesomeIcon icon={faCompass} size='lg' color='#F23545'/>
+                    </Link> 
+                    : 
+                    <Link to="/explorar">
+                    <FontAwesomeIcon icon={faCompass} size='lg' color='#FAABA8'/>
+                    </Link>}
+                    {this.props.config ? 
+                    <Link to="/config">
+                      <FontAwesomeIcon icon={faCog} size='lg' color='#F23545'/>
+                    </Link> 
+                    : 
+                    <Link to="/config">
+                    <FontAwesomeIcon icon={faCog} size='lg' color='#FAABA8'/>
+                    </Link>}
+                    {this.props.perfil ? 
+                    <Link to="/perfil">
+                      <FontAwesomeIcon icon={faUser} size='lg' color='#F23545'/>
+                    </Link> 
+                    : 
+                    <Link to="/perfil">
+                    <FontAwesomeIcon icon={faUser} size='lg' color='#FAABA8'/>
+                    </Link>}
+                  </div>
                 </div>
+              </div>
               }
               
               

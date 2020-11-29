@@ -1,0 +1,13 @@
+.secoes-home section{
+    height: 150vh;
+    text-align: center;
+    font-size: xx-large;
+}
+.secoes-home section::before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 90vw;
+    height: 1vh;
+    background-color: rgb(255, 0, 0);
+}

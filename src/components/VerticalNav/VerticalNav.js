@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link as SmoothLink  } from "react-scroll";
 import ReactTooltip from "react-tooltip";
 import './VerticalNav.css';
+import inView from 'in-view';
 
 export default class VerticalNav extends Component{
     constructor(props){
@@ -13,6 +14,20 @@ export default class VerticalNav extends Component{
         ativoManual: false,
         ativoClasses: false,
     }}
+    
+    handleView = section => {
+        const linkEl = document.querySelector(`#link-${section}`);
+        
+        let offsetHeight = 0.1*(window.innerHeight)
+        inView.offset({
+            bottom:offsetHeight
+        });
+        
+        inView(`#${section}`)
+            .on("enter", () => linkEl.classList.add('dot-active'))
+            .on("exit", ()  => linkEl.classList.remove('dot-active'))
+    };
+    
 
     dot_selecionado(e, section) {
         switch (section) {
@@ -29,47 +44,65 @@ export default class VerticalNav extends Component{
                 this.setState({ ativoBanner: false, ativoSobre: false, ativoDesafio: false, ativoManual: true, ativoClasses: false })
                 break;
             case 'classes':
-            this.setState({ ativoBanner: false, ativoSobre: false, ativoDesafio: false, ativoManual: false, ativoClasses: true })
+                this.setState({ ativoBanner: false, ativoSobre: false, ativoDesafio: false, ativoManual: false, ativoClasses: true })
                 break;
-        
             default:
                 break;
     }}
+
+    componentDidMount(){
+        ["banner", "sobre", "desafios-missao", "manual", "classes"].forEach(this.handleView);
+    }
 
     render(){
         return(
             <div className="VerticalNav">
                 <nav className="verticalNav">
                     <div className='link-list'>
-                        <SmoothLink to="banner" smooth={true} data-tip='Banner'>
-                            <span 
-                            className={'nav-dots dot-banner ' + (this.state.ativoBanner ? 'dot-active' : '')} 
-                            onClick={(e) => this.dot_selecionado(e, 'banner')} 
-                            />
-                        </SmoothLink>
-                        <SmoothLink to="sobre" smooth={true} data-tip='Sobre'>
-                            <span 
-                            className={'nav-dots dot-sobre ' + (this.state.ativoSobre ? 'dot-active' : '')} 
-                            onClick={(e) => this.dot_selecionado(e, 'sobre')} 
-                            />
-                        </SmoothLink>
-                        <SmoothLink to="desafios-missao" smooth={true} data-tip='O que queremos?'>
-                            <span 
-                            className={'nav-dots dot-desafios-missao ' + (this.state.ativoDesafio ? 'dot-active' : '')} 
-                            onClick={(e) => this.dot_selecionado(e, 'desafios-missao')} 
-                            />
-                        </SmoothLink>
-                        <SmoothLink to="manual" smooth={true} data-tip='Como Funciona?'>
-                            <span 
-                            className={'nav-dots dot-manual '  + (this.state.ativoManual ? 'dot-active' : '')} 
-                            onClick={(e) => this.dot_selecionado(e, 'manual')} 
-                            />
-                        </SmoothLink>
-                        <SmoothLink to="classes" smooth={true} data-tip='Classes'>
-                            <span 
-                            className={'nav-dots dot-classes ' + (this.state.ativoClasses ? 'dot-active' : '')} 
-                            onClick={(e) => this.dot_selecionado(e, 'classes')} />
-                        </SmoothLink>
+                        <SmoothLink 
+                        id='link-banner' 
+                        href="#banner" 
+                        to="banner" 
+                        smooth={true} 
+                        data-tip='Banner' 
+                        className={'nav-dots dot-banner ' + (this.state.ativoBanner ? 'dot-active' : '')} 
+                        onClick={(e) => this.dot_selecionado(e, 'banner')} 
+                        />
+                        <SmoothLink 
+                        id='link-sobre' 
+                        href="#sobre" to="sobre" 
+                        smooth={true} 
+                        data-tip='Sobre' 
+                        className={'nav-dots dot-sobre ' + (this.state.ativoSobre ? 'dot-active' : '')} 
+                        onClick={(e) => this.dot_selecionado(e, 'sobre')} 
+                        />
+                        <SmoothLink 
+                        id='link-desafios-missao' 
+                        href="#desafios-missao" 
+                        to="desafios-missao" 
+                        smooth={true} 
+                        data-tip='O que queremos?' 
+                        className={'nav-dots dot-desafios-missao ' + (this.state.ativoDesafio ? 'dot-active' : '')} 
+                        onClick={(e) => this.dot_selecionado(e, 'desafios-missao')} 
+                        />
+                        <SmoothLink 
+                        id='link-manual' 
+                        href="#manual" 
+                        to="manual" 
+                        smooth={true} 
+                        data-tip='Como Funciona?' 
+                        className={'nav-dots dot-manual '  + (this.state.ativoManual ? 'dot-active' : '')} 
+                        onClick={(e) => this.dot_selecionado(e, 'manual')} 
+                        />
+                        <SmoothLink 
+                        id='link-classes' 
+                        href="#classes" 
+                        to="classes" 
+                        smooth={true} 
+                        data-tip='Classes' 
+                        className={'nav-dots dot-classes ' + (this.state.ativoClasses ? 'dot-active' : '')} 
+                        onClick={(e) => this.dot_selecionado(e, 'classes')}
+                        />
                     </div>
                     <ReactTooltip place="left" effect="float" textColor='#fff' backgroundColor='#008296'/>
                 </nav>

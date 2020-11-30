@@ -16,9 +16,9 @@
     width: 8px;
     height: 40px;
     border-radius: 15px;
+    cursor: pointer;
     background-color: #9CE5F0;
     color: #9CE5F0;
-    cursor: pointer;
 }
 .dot-active{
     background-color: #07BEDA;

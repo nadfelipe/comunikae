@@ -37,13 +37,11 @@ export default class Nav extends Component{
                       <p>Entrar no jogo</p>
                     </Link>
                   </div>
-                </div>
-              }
+                </div>}
               
               {this.props.setar === 'fora-home' &&
               <div className='nav-container-fora'>
                 <div id='links-fora'>
-                  {/* TODO: alterar as cores pelas props dos icones selecionados  */}
                   <Link to="/">
                     <img src={Logo} alt='Logo do Comunikaê'/>
                   </Link>
@@ -82,11 +80,7 @@ export default class Nav extends Component{
                     </Link>}
                   </div>
                 </div>
-              </div>
-              }
-              
-              
-              
+              </div>}
             </nav>
           </header>
       </div>

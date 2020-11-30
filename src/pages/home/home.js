@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
 import './Home.css';
 import Nav from '../../components/Nav/Nav'
+import VNav from '../../components/VerticalNav/VerticalNav'
 
 export default class Home extends Component{
 render(){
     return (
       <div className="Home">
         <Nav setar='home'></Nav>
+        <VNav></VNav>
         <div className='secoes-home'>
+          <section id='banner'>teste banner</section>
           <section id='sobre'>teste seção sobre</section>
           <section id='desafios-missao'>teste seção desafios e missao</section>
           <section id='manual'>teste seção manual</section>

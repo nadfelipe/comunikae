@@ -1,13 +1,18 @@
 .secoes-home section{
-    height: 150vh;
     text-align: center;
-    font-size: xx-large;
 }
-.secoes-home section::before{
+/* .secoes-home section::before{
     content: '';
     display: block;
     margin: 0 auto;
     width: 90vw;
     height: 1vh;
     background-color: rgb(255, 0, 0);
+} */
+.content-banner{
+    height: calc(100vh - 18vh);
+    background-color: #fff;
+    background-image: url('../../assets/img/banner.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }

@@ -18,7 +18,7 @@ export default class VerticalNav extends Component{
     handleView = section => {
         const linkEl = document.querySelector(`#link-${section}`);
         
-        let offsetHeight = 0.1*(window.innerHeight)
+        let offsetHeight = 0.01*(window.innerHeight)
         inView.offset({
             bottom:offsetHeight
         });

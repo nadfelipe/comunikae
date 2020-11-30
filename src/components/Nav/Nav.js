@@ -52,7 +52,7 @@ export default class Nav extends Component{
                     </Link> 
                     : 
                     <Link to="/mural">
-                    <FontAwesomeIcon icon={faHome} size='lg' color='#FAABA8'/>
+                    <FontAwesomeIcon icon={faHome} size='lg' color='#97212B'/>
                     </Link>}
                     {this.props.explorar ? 
                     <Link to="/explorar">
@@ -60,7 +60,7 @@ export default class Nav extends Component{
                     </Link> 
                     : 
                     <Link to="/explorar">
-                    <FontAwesomeIcon icon={faCompass} size='lg' color='#FAABA8'/>
+                    <FontAwesomeIcon icon={faCompass} size='lg' color='#97212B'/>
                     </Link>}
                     {this.props.config ? 
                     <Link to="/config">
@@ -68,7 +68,7 @@ export default class Nav extends Component{
                     </Link> 
                     : 
                     <Link to="/config">
-                    <FontAwesomeIcon icon={faCog} size='lg' color='#FAABA8'/>
+                    <FontAwesomeIcon icon={faCog} size='lg' color='#97212B'/>
                     </Link>}
                     {this.props.perfil ? 
                     <Link to="/perfil">
@@ -76,7 +76,7 @@ export default class Nav extends Component{
                     </Link> 
                     : 
                     <Link to="/perfil">
-                    <FontAwesomeIcon icon={faUser} size='lg' color='#FAABA8'/>
+                    <FontAwesomeIcon icon={faUser} size='lg' color='#97212B'/>
                     </Link>}
                   </div>
                 </div>

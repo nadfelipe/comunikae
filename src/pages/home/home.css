@@ -1,14 +1,7 @@
 .secoes-home section{
     text-align: center;
 }
-/* .secoes-home section::before{
-    content: '';
-    display: block;
-    margin: 0 auto;
-    width: 90vw;
-    height: 1vh;
-    background-color: rgb(255, 0, 0);
-} */
+/* Início banner */
 .content-banner{
     height: calc(100vh - 18vh);
     background: rgb(213,255,253);
@@ -95,4 +88,45 @@
     position: absolute;
     left: 2%;
     bottom: 2%;
+}
+/* Fim banner */
+/* Início banner */
+#sobre{
+    height: calc(100vh);
+    background: #041622;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-sobre{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sobre-textos{
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    margin-left: 2.5%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    text-justify: initial;
+}
+.sobre-h2{
+    color: #F23545;
+    font-weight: bold;
+    font-size: 2.3em;
+    line-height: 45px;
+}
+.sobre-p{
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 2px;
 }

@@ -40,7 +40,11 @@ render(){
               <img className='dm-img' src={ImgSecao3} alt='Imagem do ranking'/>
             </div>
           </section>
-          <section id='manual'>teste seção manual</section>
+          <section id='manual'>
+            <div className='content-manual'>
+              <h2 className='home-h2'>Como funciona o jogo?</h2>
+            </div>
+          </section>
           <section id='classes'>teste seção classes</section>
         </div>
       </div>

@@ -122,6 +122,10 @@
     text-align: left;
     text-justify: initial;
 }
+.sobre-img{
+    pointer-events: none;
+}
+/* Fim sobre */
 .home-h2{
     color: #F23545;
     font-weight: bold;
@@ -134,10 +138,6 @@
     line-height: 170%;
     letter-spacing: 2px;
 }
-.sobre-img{
-    pointer-events: none;
-}
-/* Fim sobre */
 /* Início desafios-missao */
 #desafios-missao{
     height: 100vh;
@@ -145,6 +145,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10vh;
 }
 .content-dm{
     width: 78%;
@@ -167,4 +168,16 @@
 }
 .dm-img{
     width: 50%;
+}
+/* Fim desafios-missao */
+/* Início manual */
+#manual{
+    height: 100vh;
+    background: #041622;
+    background-image: url('../../assets/img/onda-invertida.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

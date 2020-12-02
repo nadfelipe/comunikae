@@ -3,6 +3,7 @@ exports.contentManual = [
         id: 1,
         titulo: 'Se liga nisso!',
         texto: 'O jogo começa com uma gincana na sua escola, para te contextualizar sobre os temas das fases, e para a formação das equipes de competição. Ao decorrer do jogo ocorrerão outras gincanas para conhecer pessoas novas, ou até mesmo as que você só conhecia pelas telas.',
+        texto2: '',
         urlImg: '',
         nomeContent: 'Explicação'
     },
@@ -10,13 +11,15 @@ exports.contentManual = [
         id: 2,
         titulo: 'Deixe seu perfil a sua cara!',
         texto: 'Agora o jogo é virtual e você deve criar seu perfil e colaborar para criação do perfil da sua equipe. Os perfis são customizáveis tendo 4 estéticas diferentes: fofo, medieval, futurista e espacial!',
-        urlImg: '',
+        texto2: '',
+        urlImg: '../../assets/img/imagem-2.png',
         nomeContent: 'Perfis'
     },
     {
         id: 3,
         titulo: 'Mas... O que que tem nesse jogo?',
         texto: 'Assim que logar você tem uma visão geral das informações mais importantes, como a sua posição no ranking, seu kaês, o desafio atual e a contagem regressiva para o próximo participaê.',
+        texto2: '',
         urlImg: '',
         nomeContent: 'Elementos'
     },
@@ -32,6 +35,7 @@ exports.contentManual = [
         id: 5,
         titulo: 'Dá o play aí!',
         texto: 'Agora é só começar a jogar! Cumpra os desafios que estão disponíveis no perfil dos corujas da sua equipe, lembrando que todo desafio cumprido é avaliado de acordo com alguns critérios para pontuação e neles o jogador também pode desbloquear conquistas no jogo e na escola.',
+        texto2: '',
         urlImg: '',
         nomeContent: 'Play'
     },

@@ -5,6 +5,7 @@ import VNav from '../../components/VerticalNav/VerticalNav'
 import Simbolo from '../../assets/img/comunikae_simbolo.svg'
 import ImgSecao2 from '../../assets/img/imagem-secao-2.png'
 import ImgSecao3 from '../../assets/img/imagem-secao-3.png'
+import Manual from '../../components/Manual/Manual.js'
 
 export default class Home extends Component{
 render(){
@@ -40,9 +41,10 @@ render(){
               <img className='dm-img' src={ImgSecao3} alt='Imagem do ranking'/>
             </div>
           </section>
-          <section id='manual'>
-            <div className='content-manual'>
+          <section className='container-manual'>
+            <div className='content-manual' id='manual'>
               <h2 className='home-h2'>Como funciona o jogo?</h2>
+              <Manual />
             </div>
           </section>
           <section id='classes'>teste seção classes</section>

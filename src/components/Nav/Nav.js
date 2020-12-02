@@ -15,7 +15,7 @@ import { faHome, faCompass, faCog, faUser } from '@fortawesome/free-solid-svg-ic
 export default class Nav extends Component{
   render(){
     return (
-      <div className="Nav">
+      <div id='topo' className="Nav">
           <header>
             <nav className='nav'>
               {this.props.setar === 'home' &&

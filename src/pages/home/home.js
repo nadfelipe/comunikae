@@ -13,9 +13,11 @@ render(){
         <div className='secoes-home'>
           <section id='banner'>
             <div className='content-banner'>
-              <h1>Um espaço para aprender, interagir e competir juntos</h1>
-              <p>O Comunikaê transforma o processo de comunicação dentro das escolas, proporcionando uma maior interação e cooperação entre os alunos para realizar desafios.</p>
-              <img src={Simbolo} alt='Símbolo Comunikaê'/>
+              <div className='banner-textos'>
+                <h1 className='banner-h1'>Um espaço <span className='banner-h1-span1'/>para aprender<span className='banner-h1-span2'/>, interagir <span className='banner-h1-span3'/>e competir <span className='banner-h1-span4'/>juntos</h1>
+                <p className='banner-p'>O Comunikaê transforma o processo de comunicação dentro das escolas, <br/> proporcionando uma maior interação e cooperação entre os alunos para realizar desafios.</p>
+              </div>
+              <img className='banner-simbolo' src={Simbolo} alt='Símbolo Comunikaê'/>
             </div>
           </section>
           <section id='sobre'>teste seção sobre</section>

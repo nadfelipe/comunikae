@@ -5,7 +5,7 @@
 .nav-container-home{
     width: 100vw;
     height: 18vh;
-    background-color: #000;
+    background-color: #041622;
     display: flex;
     justify-content: center;
 }
@@ -35,11 +35,11 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    background-color: #d10c1d;
+    background-color: #008296;
     border-radius: 15px;
 }
 .btn-entrar:hover{
-    background-color: #008296;
+    background-color: #d10c1d;
 }
 .btn-entrar p{
     margin: 0 0 0 5%;

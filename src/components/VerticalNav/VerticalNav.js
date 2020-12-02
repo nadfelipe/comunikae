@@ -8,7 +8,7 @@ export default class VerticalNav extends Component{
     constructor(props){
     super(props);
     this.state ={
-        ativoBanner: true,
+        ativoTopo: true,
         ativoSobre: false,
         ativoDesafio: false,
         ativoManual: false,
@@ -31,27 +31,27 @@ export default class VerticalNav extends Component{
 
     dot_selecionado(e, section) {
         switch (section) {
-            case 'banner':
-                this.setState({ ativoBanner: true, ativoSobre: false, ativoDesafio: false, ativoManual: false, ativoClasses: false })
+            case 'topo':
+                this.setState({ ativoTopo: true, ativoSobre: false, ativoDesafio: false, ativoManual: false, ativoClasses: false })
                 break;
             case 'sobre':
-                this.setState({ ativoBanner: false, ativoSobre: true, ativoDesafio: false, ativoManual: false, ativoClasses: false })
+                this.setState({ ativoTopo: false, ativoSobre: true, ativoDesafio: false, ativoManual: false, ativoClasses: false })
                 break;
             case 'desafios-missao':
-                this.setState({ ativoBanner: false, ativoSobre: false, ativoDesafio: true, ativoManual: false, ativoClasses: false })
+                this.setState({ ativoTopo: false, ativoSobre: false, ativoDesafio: true, ativoManual: false, ativoClasses: false })
                 break;
             case 'manual':
-                this.setState({ ativoBanner: false, ativoSobre: false, ativoDesafio: false, ativoManual: true, ativoClasses: false })
+                this.setState({ ativoTopo: false, ativoSobre: false, ativoDesafio: false, ativoManual: true, ativoClasses: false })
                 break;
             case 'classes':
-                this.setState({ ativoBanner: false, ativoSobre: false, ativoDesafio: false, ativoManual: false, ativoClasses: true })
+                this.setState({ ativoTopo: false, ativoSobre: false, ativoDesafio: false, ativoManual: false, ativoClasses: true })
                 break;
             default:
                 break;
     }}
 
     componentDidMount(){
-        ["banner", "sobre", "desafios-missao", "manual", "classes"].forEach(this.handleView);
+        ["topo", "sobre", "desafios-missao", "manual", "classes"].forEach(this.handleView);
     }
 
     render(){
@@ -60,13 +60,13 @@ export default class VerticalNav extends Component{
                 <nav className="verticalNav">
                     <div className='link-list'>
                         <SmoothLink 
-                        id='link-banner' 
-                        href="#banner" 
-                        to="banner" 
+                        id='link-topo' 
+                        href="#topo" 
+                        to="topo" 
                         smooth={true} 
-                        data-tip='Banner' 
-                        className={'nav-dots dot-banner ' + (this.state.ativoBanner ? 'dot-active' : '')} 
-                        onClick={(e) => this.dot_selecionado(e, 'banner')} 
+                        data-tip='Topo' 
+                        className={'nav-dots dot-topo ' + (this.state.ativoTopo ? 'dot-active' : '')} 
+                        onClick={(e) => this.dot_selecionado(e, 'topo')} 
                         />
                         <SmoothLink 
                         id='link-sobre' 

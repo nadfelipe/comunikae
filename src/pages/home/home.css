@@ -95,7 +95,7 @@
     height: calc(100vh + 100px);
     background: #041622;
     background-image: url('../../assets/img/onda.svg');
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: center bottom;
     display: flex;
     align-items: center;
@@ -177,7 +177,7 @@
     height: calc(100vh + 40vh);
     background: #041622;
     background-image: url('../../assets/img/onda-invertida.svg'), url('../../assets/img/onda.svg');
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: center top, center bottom;
     display: flex;
     align-items: center;
@@ -196,8 +196,6 @@
 #classes{
     height: 100vh;
     background: #fff;
-    background-repeat: no-repeat;
-    background-position: center top;
     display: flex;
     align-items: center;
     justify-content: center;

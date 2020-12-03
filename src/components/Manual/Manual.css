@@ -1,27 +1,65 @@
 .Manual{
     width: 100%;
-    height: 90%;
-    background-color: blueviolet;
+    height: 88%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.manual-div-content{
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.manual-img{
+    max-width: 600px;
+    max-height: 500px;
+    pointer-events: none;
+}
+.manual-textos{
+    width: 35%;
+}
+.manual-h3{
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    text-align: left;
+    color: #07BEDA;
+    font-size: 1.4em;
+}
+.manual-p{
+    text-align: left;
+    font-size: 0.8em;
+    color: #fff;
 }
 .manual-div-numeros{
     font-family: Poppins, sans-serif;
     display: flex;
-    width: 50%;
+    height: 15%;
+    width: 60%;
     justify-content: space-around;
-    background-color: chartreuse;
 }
 .numeros-manual{
     font-size: 2.5em;
     font-weight: 800;
-    
+    cursor: pointer;
 }
 .numero-apagado{
     color: #862936;
 }
 .numero-ligado{
     color: #DC3543;
+}
+.nome-numero{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    color: #DC3543;
+}
+.div-numero-nome{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
 }

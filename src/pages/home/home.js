@@ -53,7 +53,7 @@ render(){
           <section id='classes'>
             <div className='content-classes'>
               <h2 className='home-h2'>Classes</h2>
-              <p className='home-p'>Olha que legal, você também pode personalizar sua imersão no jogo, sua equipe e você podem decidir entre quatro estéticas que vão personalizar o cartão de visita de vocês, a página da equipe, e você também pode personalizar só o seu, deixando com a sua cara.</p>
+              <p className='home-p classes-p'>Olha que legal, você também pode personalizar sua imersão no jogo, sua equipe e você podem decidir entre quatro estéticas que vão personalizar o cartão de visita de vocês, a página da equipe, e você também pode personalizar só o seu, deixando com a sua cara.</p>
               <Classes />
             </div>
           </section>

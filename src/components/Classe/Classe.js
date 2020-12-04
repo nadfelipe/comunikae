@@ -95,7 +95,7 @@ export default class Manual extends Component{
 
 
     render(){
-        const { id, titulo, texto } = this.state;
+        const { texto } = this.state;
         return(
             <div className='Classes'>
                 <div className='simbolo-classes'>

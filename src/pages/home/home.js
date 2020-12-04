@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import './Home.css';
-import Nav from '../../components/Nav/Nav'
-import VNav from '../../components/VerticalNav/VerticalNav'
+import Nav from '../../components/Nav/Nav.js'
+import VNav from '../../components/VerticalNav/VerticalNav.js'
+import Manual from '../../components/Manual/Manual.js'
+import Classes from '../../components/Classe/Classe.js'
+import Footer from '../../components/Footer/Footer.js'
 import Simbolo from '../../assets/img/comunikae_simbolo.svg'
 import ImgSecao2 from '../../assets/img/imagem-secao-2.png'
 import ImgSecao3 from '../../assets/img/imagem-secao-3.png'
-import Manual from '../../components/Manual/Manual.js'
-import Classes from '../../components/Classe/Classe.js'
+
 
 export default class Home extends Component{
 render(){
@@ -56,6 +58,7 @@ render(){
             </div>
           </section>
         </div>
+        <Footer/>
       </div>
     );
   }

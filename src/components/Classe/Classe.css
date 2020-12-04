@@ -1,0 +1,48 @@
+.icon-desligado{
+    filter: grayscale(100%) opacity(50%);
+}
+.icon-ligado{
+    filter: none;
+}
+.Classes{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.simbolo-classes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+.img-simbolo-classes{
+    width: 40%;
+    cursor: pointer;
+}
+.textos-classes{
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 80%; 
+    width: 55%;
+    height: 100%;
+    font-size: 0px;
+}
+.texto-fofo{
+    background-image: url('../../assets/img/cx-fofo.png');
+}
+.texto-medieval{
+    background-image: url('../../assets/img/cx-medieval.png');
+    background-position: top center;
+}
+.texto-futurista{
+    background-image: url('../../assets/img/cx-futurista.png');
+}
+.texto-espacial{
+    background-image: url('../../assets/img/cx-espacial.png');
+    background-position: top center;
+}

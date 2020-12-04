@@ -6,6 +6,7 @@ import Simbolo from '../../assets/img/comunikae_simbolo.svg'
 import ImgSecao2 from '../../assets/img/imagem-secao-2.png'
 import ImgSecao3 from '../../assets/img/imagem-secao-3.png'
 import Manual from '../../components/Manual/Manual.js'
+import Classes from '../../components/Classe/Classe.js'
 
 export default class Home extends Component{
 render(){
@@ -47,7 +48,13 @@ render(){
               <Manual />
             </div>
           </section>
-          <section id='classes'>teste seção classes</section>
+          <section id='classes'>
+            <div className='content-classes'>
+              <h2 className='home-h2'>Classes</h2>
+              <p className='home-p'>Olha que legal, você também pode personalizar sua imersão no jogo, sua equipe e você podem decidir entre quatro estéticas que vão personalizar o cartão de visita de vocês, a página da equipe, e você também pode personalizar só o seu, deixando com a sua cara.</p>
+              <Classes />
+            </div>
+          </section>
         </div>
       </div>
     );

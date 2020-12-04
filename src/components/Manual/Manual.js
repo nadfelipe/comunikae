@@ -23,7 +23,7 @@ export default class Manual extends Component{
     cleanState(){
         this.setState({id:'', titulo: '', texto:'', urlImg:'', nomeContent:'', texto2:''})
     }
-
+    
     mudarCor = (numero) =>{
         this.zerarCor();
         const element = document.getElementById(`${numero}`);
@@ -50,7 +50,7 @@ export default class Manual extends Component{
         })
     }
 
-    viewDiv(e, id){
+    showDiv(e, id){
         this.mudarCor(id);
         this.cleanState();
         this.setarState(id);
@@ -83,28 +83,28 @@ export default class Manual extends Component{
                 </div>
                 <div className='manual-div-numeros'>
                     <div className='div-numero-nome'>
-                        <p id='1'  onClick={(e) => this.viewDiv(e, 1)} className='numeros-manual numero-apagado' >1</p>
+                        <p id='1'  onClick={(e) => this.showDiv(e, 1)} className='numeros-manual numero-apagado' >1</p>
                         {id === 1 &&
                         <p className='nome-numero'>{nomeContent}</p>}
                     </div>
                     
                     <div className='div-numero-nome'>
-                        <p id='2' onClick={(e) => this.viewDiv(e, 2)} className='numeros-manual numero-apagado'>2</p>
+                        <p id='2' onClick={(e) => this.showDiv(e, 2)} className='numeros-manual numero-apagado'>2</p>
                         {id === 2 &&
                         <p className='nome-numero'>{nomeContent}</p>}
                     </div>
                     <div className='div-numero-nome'>
-                        <p id='3' onClick={(e) => this.viewDiv(e, 3)} className='numeros-manual numero-apagado'>3</p>
+                        <p id='3' onClick={(e) => this.showDiv(e, 3)} className='numeros-manual numero-apagado'>3</p>
                         {id === 3 &&
                         <p className='nome-numero'>{nomeContent}</p>}
                     </div>
                     <div className='div-numero-nome'>
-                        <p id='4' onClick={(e) => this.viewDiv(e, 4)} className='numeros-manual numero-apagado'>4</p>
+                        <p id='4' onClick={(e) => this.showDiv(e, 4)} className='numeros-manual numero-apagado'>4</p>
                         {id === 4 &&
                         <p className='nome-numero'>{nomeContent}</p>}
                     </div>
                     <div className='div-numero-nome'>
-                        <p id='5' onClick={(e) => this.viewDiv(e, 5)} className='numeros-manual numero-apagado'>5</p>
+                        <p id='5' onClick={(e) => this.showDiv(e, 5)} className='numeros-manual numero-apagado'>5</p>
                         {id === 5 &&
                         <p className='nome-numero'>{nomeContent}</p>}
                     </div>

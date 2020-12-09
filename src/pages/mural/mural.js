@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './Mural.css';
 import Nav from '../../components/Nav/Nav'
 import Footer from '../../components/Footer/Footer.js'
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMedal, faBullhorn, faVectorSquare, faCheck, faPlus, faPen, faTrash } from '@fortawesome/free-solid-svg-icons';
 
@@ -30,16 +32,23 @@ export default class Mural extends Component{
           <h3>faça postagens e filtros dinâmicos</h3>
           <div>
             <div>
-              
+              <div>
               <FontAwesomeIcon icon={faPlus} size='sm' color='#F23545'/>
               <p>Nova Postagem</p>
+              </div>
               <div>
-                <FontAwesomeIcon icon={faPlus} size='sm' color='#F23545'/>
-                <p>Novo Filtro</p>
-                <FontAwesomeIcon icon={faPen} size='sm' color='#F23545'/>
-                <p>Editar Filtros</p>
-                <FontAwesomeIcon icon={faTrash} size='sm' color='#F23545'/>
-                <p>Deletar Filtros</p>
+                <div>
+                  <FontAwesomeIcon icon={faPlus} size='sm' color='#F23545'/>
+                  <p>Novo Filtro</p>
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faPen} size='sm' color='#F23545'/>
+                  <p>Editar Filtros</p>
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faTrash} size='sm' color='#F23545'/>
+                  <p>Deletar Filtros</p>
+                </div>
               </div>
             </div>
           </div>

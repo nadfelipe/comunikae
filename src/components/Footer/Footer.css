@@ -1,6 +1,5 @@
 .Footer{
     width: 100%;
-    height: 13vh;
     background-color: #041622;
     display: flex;
     flex-direction: column;
@@ -9,18 +8,19 @@
 }
 .container-footer{
     width: 30%;
-    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 .links-footer{
+    margin: 3%;
     width: 60%;
     display: flex;
     justify-content: space-between;
 }
 .footer-p{
+    margin: 1%;
     color: #fff;
     font-family: Poppins, sans-serif;
     font-weight: 400;

@@ -8,20 +8,22 @@ export default class Footer extends Component{
         return(
             <div className='Footer'>
                 <footer className='container-footer'>
+                    { this.props.icons === 'true' &&
                     <div className='links-footer'>
-                        <a href='#'>
+                        <a href='https://www.facebook.com/'>
                             <FontAwesomeIcon icon={faFacebookF} size='2x' color='#fff'/>
                         </a>
-                        <a href='#'>
+                        <a href='https://www.instagram.com/'>
                             <FontAwesomeIcon icon={faInstagram} size='2x' color='#fff'/>
                         </a>
-                        <a href='#'>
+                        <a href='https://twitter.com/'>
                             <FontAwesomeIcon icon={faTwitter} size='2x' color='#fff'/>
                         </a>
-                        <a href='#'>
+                        <a href='https://www.youtube.com/'>
                             <FontAwesomeIcon icon={faYoutube} size='2x' color='#fff'/>
                         </a>
                     </div>
+                    }
                     <p className='footer-p'>© 2020 Comunikaê</p>
                 </footer>
             </div>

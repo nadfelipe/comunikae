@@ -58,7 +58,7 @@ render(){
             </div>
           </section>
         </div>
-        <Footer/>
+        <Footer icons='true'/>
       </div>
     );
   }

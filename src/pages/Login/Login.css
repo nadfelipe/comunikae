@@ -12,14 +12,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0099ff;
 }
 .btn-voltar{
-    background-color: #00ff2a;
+    height: 6%;
+    width: 7%;
     align-self: flex-start;
+    margin-top: 2em;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+.btn-voltar-link{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-voltar-p{
+    color: #fff;
+}
+.btn-voltar-img{
+    transform: rotate(180deg);
+    margin-bottom: 0.6em;
 }
 .content-login{
-    background-color: #00ff2a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,27 +46,26 @@
     width: 35%;
 }
 .login-h1{
-    background-color: #4c00ff;
     font-family: Poppins, sans-serif;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 700;
     color: #F23545;
 }
 .login-form-container{
-    background-color: #4c00ff;
     height: 100%;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
 }
 .form-login{
-    
-    background-color: #393492;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 30%;
+    width: 100%;
+    margin-top: 2em;
 }
 .input-container {
     position: relative;
@@ -91,8 +108,43 @@ label {
 
 .input-login:focus + label,
 .input-login:valid + label {
-    color: #26a69a;
+    color: #07BEDA;
     font-size: .8rem;
     top: -30px;
     pointer-events: none;
+}
+.btn-acessar-container{
+    width: 32%;
+    height: 12%;
+    text-decoration: none;
+}
+.btn-acessar{
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 1em;
+    border-radius: 15px;
+    background-color: #008296;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.9em;
+}
+.btn-acessar:hover{
+    background-color: #F23545;
+}
+.btn-acessar-icon::before{
+    content: url('../../assets/img/start_btn2.svg');
+    position: absolute;
+}
+.btn-acessar-icon:hover::before{
+    display: none;
+}
+.btn-acessar-icon:hover{
+    content: url('../../assets/img/start_btn2.svg');
 }

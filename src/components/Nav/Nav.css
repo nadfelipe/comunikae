@@ -28,6 +28,9 @@
     color: #07BEDA;
     cursor: pointer;
 }
+.nav-link:hover{
+    color: #F23545;
+}
 .btn-entrar{
     width: 15%;
     height: 30%;

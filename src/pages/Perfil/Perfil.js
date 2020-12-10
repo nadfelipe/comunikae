@@ -8,7 +8,18 @@ export default class Perfil extends Component{
     return (
       <div className="Perfil">
         <Nav setar='fora-home' perfil={true}></Nav>
-        <p>Perfil</p>
+        <div className='top-perfil'>
+
+          <div>
+
+          </div>
+        </div>
+        <div className='select-page-perfil'>
+
+        </div>
+        <div className='content-selected-perfil'>
+
+        </div>
         <Footer/>
       </div>
     );

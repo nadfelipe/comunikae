@@ -8,8 +8,6 @@ export default class Explorar extends Component {
     return (
       <div className="Explorar">
         <Nav setar='fora-home' explorar={true}></Nav>
-        <p>Explorar</p>
-        <Footer/>
       </div>
     );   
   }

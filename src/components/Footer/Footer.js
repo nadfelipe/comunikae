@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 export default class Footer extends Component{
+    getCurrentYear() { 
+        return new Date().getFullYear();
+    }
     render(){
         return(
             <div className='Footer'>
@@ -24,7 +27,7 @@ export default class Footer extends Component{
                         </a>
                     </div>
                     }
-                    <p className='footer-p'>© 2020 Comunikaê</p>
+                    <p className='footer-p'>© {this.getCurrentYear()} Comunikaê</p>
                 </footer>
             </div>
         )}

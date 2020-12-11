@@ -20,6 +20,7 @@ export default class Perfil extends Component{
         urlImgTime: '',
         nivel: '',
         funcao: '',
+        classe: '',
     }
 }
   getYear() { 
@@ -36,6 +37,7 @@ export default class Perfil extends Component{
       time: 'Pangeia',
       nivel: 2,
       funcao: 'Coruja',
+      classe: 'futurista',
     });
     this.getYear();
   }
@@ -73,16 +75,16 @@ export default class Perfil extends Component{
               <div className='funcao-info'>
                 <p>{this.state.funcao}</p>
                 {this.state.classe === 'medieval' &&
-                  <img src={this.state.urlImgTime} alt='Simbolo do time'/>
+                  <img src={this.state.urlImgTime} alt='Simbolo do coruja medieval'/>
                 }
                 {this.state.classe === 'futurista' &&
-                  <img src={this.state.urlImgTime} alt='Simbolo do time'/>
+                  <img src={this.state.urlImgTime} alt='Simbolo do coruja futurista'/>
                 }
                 {this.state.classe === 'fofo' &&
-                  <img src={this.state.urlImgTime} alt='Simbolo do time'/>
+                  <img src={this.state.urlImgTime} alt='Simbolo do coruja fofo'/>
                 }
                 {this.state.classe === 'espacial' &&
-                  <img src={this.state.urlImgTime} alt='Simbolo do time'/>
+                  <img src={this.state.urlImgTime} alt='Simbolo do coruja espacial'/>
                 }
               </div>
             </div>

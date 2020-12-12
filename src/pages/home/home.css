@@ -5,7 +5,7 @@
 .content-banner{
     height: calc(100vh - 18vh);
     background: rgb(213,255,253);
-    background-image: url('../../assets/img/banner.png'), linear-gradient(180deg, rgba(213,255,253,1) 0%, rgba(197,251,255,1) 70%);
+    background-image: url('../../assets/img/banner.png'), linear-gradient(180deg, #d5fffd 0%, rgba(197,251,255,1) 70%);
     background-repeat: no-repeat;
     background-position: center bottom;
     display: flex;

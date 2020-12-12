@@ -104,7 +104,7 @@ export default class VerticalNav extends Component{
                         onClick={(e) => this.dot_selecionado(e, 'classes')}
                         />
                     </div>
-                    <ReactTooltip place="left" effect="float" textColor='#fff' backgroundColor='#008296'/>
+                    <ReactTooltip place="left" effect="float" textColor='#fff' backgroundColor='#fa1c2e'/>
                 </nav>
             </div>
         );

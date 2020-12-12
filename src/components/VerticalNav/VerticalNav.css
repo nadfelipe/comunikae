@@ -17,10 +17,11 @@
     height: 40px;
     border-radius: 15px;
     cursor: pointer;
-    background-color: #9CE5F0;
-    color: #9CE5F0;
+    background-color: #f235457e;
+    color: #f235457e;
+    backdrop-filter: blur(10px);
 }
 .dot-active{
-    background-color: #07BEDA;
-    color: #07BEDA;
+    background-color: #fa1c2e;
+    color: #fa1c2e;
 }

@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
     background-color: #041622;
+    background-image: url('../../assets/img/img-login.svg');
+    background-repeat: no-repeat;
+    background-position: 0% bottom;
+    background-size: 48%;
 }
 .login-content{
     height: 100%;

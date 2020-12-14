@@ -39,3 +39,19 @@ code {
 html{
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #04162298;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ededed;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9c9c9;
+}

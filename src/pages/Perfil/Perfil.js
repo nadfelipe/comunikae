@@ -7,7 +7,7 @@ import { faUserCog } from '@fortawesome/free-solid-svg-icons';
 import urlImgTime from '../../assets/img/pangeia-logo.png'
 import imgCorujaMedieval from '../../assets/img/coruja-medieval.png'
 import imgAltoFalanteMedieval from '../../assets/img/altofalante-medieval.png'
-import fotoPerfil from '../../assets/img/img-perfil.png'
+import fotoPerfil from '../../assets/img/img-perfil.jpg'
 //medalhas
 import medalha1 from '../../assets/medalhas/Comunicação.png'
 import medalha2 from '../../assets/medalhas/Criatividade.png'

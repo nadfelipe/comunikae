@@ -9,7 +9,7 @@ export default class Footer extends Component{
     }
     render(){
         return(
-            <div className='Footer'>
+            <div className='Footer' >
                 <footer className='container-footer'>
                     { this.props.icons === 'true' &&
                     <div className='links-footer'>

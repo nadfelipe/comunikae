@@ -55,19 +55,19 @@ export default class Nav extends Component{
                     <FontAwesomeIcon icon={faHome} size='lg' color='#97212B'/>
                     </Link>}
                     {this.props.explorar ? 
-                    <Link to="/explorar">
+                    <Link>
                       <FontAwesomeIcon icon={faCompass} size='lg' color='#F23545'/>
                     </Link> 
                     : 
-                    <Link to="/explorar">
+                    <Link>
                     <FontAwesomeIcon icon={faCompass} size='lg' color='#97212B'/>
                     </Link>}
                     {this.props.config ? 
-                    <Link to="/config">
+                    <Link>
                       <FontAwesomeIcon icon={faCog} size='lg' color='#F23545'/>
                     </Link> 
                     : 
-                    <Link to="/config">
+                    <Link>
                     <FontAwesomeIcon icon={faCog} size='lg' color='#97212B'/>
                     </Link>}
                     {this.props.perfil ? 

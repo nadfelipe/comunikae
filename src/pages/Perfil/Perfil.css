@@ -1,56 +1,254 @@
 .Perfil{
-    width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    background-color: #03684a;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+}
+.perfil-elements{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    align-items: center;
+    overflow-y: hidden;
 }
 .top-perfil{
-    background-color: cornflowerblue;
+    width: 65%;
+    height: 40vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .content-top-perfil{
     display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-foto-perfil{
+    width: 42%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/img/emblemaMedieval-nivel4.png');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.foto-perfil{
+    width: 32.65%;
+    height: auto;
+    border-radius: 50%;
+    margin: -3.2% 27% 9% 3%;
 }
 .infos-perfil{
-
-}
-.personal-infos{
-    display: flex;
-    background-color: crimson;
-}
-.right-personal-infos{
-    display: flex;
-    flex-direction: column;
-    background-color: chocolate;
-}
-.left-personal-infos{
-    display: flex;
-    flex-direction: column;
-    background-color: cyan;
-}
-.fast-infos-perfil{
-    display: flex;
-    background-color: darkorchid;
-}
-.content-perfil{
-    width: 80%;
+    height: 90%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+}
+.personal-infos{
+    display: flex;
+    height: 40%;
+    width: 100%;
+    justify-content: space-between;
+}
+.left-personal-infos{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nome-user-infos{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.nome-user-infos h2{
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.nome-user-infos h3{
+    font-size: 0.95em;
+}
+.right-personal-infos{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 300;
+    font-size: 1em;
+}
+.btn-editar-perfil{
+    display: flex;
+    width: 110%;
+    padding: 4% 1%;
+    background-color: #f3ec11;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #000;
+}
+.btn-editar-perfil:hover{
+    background-color: #00BCF3;
+}
+.btn-editar-perfil-p{
+    margin-left: 6%;
+}
+.fast-infos-perfil{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.371);
+    color: #fff;
+    font-weight: 500;
+    padding: 1.5% 0%;
+    border-radius: 15px;
+}
+.time-info{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+.funcao-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+.img-time{
+    width: 30%;
+    height: auto;
+}
+.img-coruja{
+    width: 30%;
+}
+.content-perfil{
+    width: 80%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .select-page-perfil{
+    margin-top: 1%;
+    margin-bottom: 1%;
     width: 80%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
 }
-.select-page-perfil *:first-child::after{
-    content: '';
-    width: 2%;
-    height: 2%;
+.btn-page{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    color: rgb(181, 181, 181);
+}
+.btn-page-selected{
+    color: #fff;
+}
+.seletor{
+    width: 85%;
+    height: 7px;
     border-radius: 15px;
-    background-color: darkred;
-    position: absolute;
+    background-color: #a5a00f;
+}
+.seletor-selected{
+    background-color: #f3ec11;
+}
+.content-selected-perfil{
+    margin-bottom: 1%;
+    width: 100%;
+    min-height: 65%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.371);
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pnts-conquistas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+.pnts-conquistas h2{
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.info-kaes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 7% 0%;
+    background-image: url(../../assets/img/cx-medieval.png);
+    background-repeat: no-repeat;
+    background-position: center -42px;
+    background-size: 90%;
+}
+.info-kaes img{
+    margin: 5% 2% 0 0;
+    width: 27%;
+}
+.info-kaes-textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+.info-kaes-textos h3{
+    font-size: 4.5em;
+    font-weight: 700;
+}
+.info-kaes-textos p{
+    margin-top: -20%;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+.arvore-conquistas{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+.content-medalha{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.medalha-perfil{
+    width: 25%;
+    pointer-events: none;
+}
+.bloqueada{
+    filter: grayscale(100%);
 }

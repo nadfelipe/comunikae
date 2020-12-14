@@ -25,7 +25,7 @@ export default class Mural extends Component{
                   </div>
                   <div>
                     <FontAwesomeIcon icon={faBullhorn} size='lg' color='#000'/>
-                    <p>83 kaês</p>
+                    <p>45 kaês</p>
                   </div>
                 </div>
                 <p className='link-card'>veja mais</p>
@@ -35,15 +35,15 @@ export default class Mural extends Component{
                 <div className='content-desafios'>
                   <div>
                     <FontAwesomeIcon icon={faCheck} size='lg' color='#000'/>
-                    <p>Substituir esse texto aqui depois vei</p>
+                    <p>Desafio 5 - postar</p>
                   </div>
                   <div>
                     <FontAwesomeIcon icon={faVectorSquare} size='lg' color='#000'/>
-                    <p>Substituir esse texto aqui depois vei</p>
+                    <p>Desafio 6 - interagir</p>
                   </div>
                   <div>
                     <FontAwesomeIcon icon={faVectorSquare} size='lg' color='#000'/>
-                    <p>Substituir esse texto aqui depois vei</p>
+                    <p>Desafio 7 - cooperar</p>
                   </div>
                 </div>
                 <p className='link-card'>ver todos</p>

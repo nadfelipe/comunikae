@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+<p align="center">
+  <img src="/src/assets/img/comunikae_logo.svg" width='200px' />
+	
+  <p align="center">
+  Plataforma que busca desenvolver a comunicação e respeito às
+  diferenças em alunos, através da gamificação!
+  </p>
+  <p align="center">
+    <img src=".github/cover.png" width='900px' />
+  </p>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/nadfelipe/comunikae?color=greeb">
 
-## Available Scripts
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/nadfelipe/comunikae?color=greeb">
 
-In the project directory, you can run:
+  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/nadfelipe/comunikae?color=greeb">
 
-### `npm start`
+  <img alt="GitHub repo license" src="https://img.shields.io/github/license/nadfelipe/comunikae?color=green">
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Confira o protótipo do projeto
+https://comunikae.netlify.app/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instalando o projeto
 
-### `npm test`
+Primeiro clone o repositório usando os comando abaixo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+  # Clonando o repositório
+  ❯ git clone https://github.com/nadfelipe/comunikae.git
 
-### `npm run build`
+  # Entrando na pasta
+  ❯ cd comunikae
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Na pasta do projeto você deve instalar as dependências, então iniciar o projeto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Usando npm**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  # Instalando as dependencies
+  ❯ npm install
 
-### `npm run eject`
+  # Iniciando o projeto na versão de desenvolvimento
+  ❯ npm start
+```
+Abra [http://localhost:3000](http://localhost:3000) para poder ver o projeto inicializado no navegador.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Licença
+[MIT License](/LICENSE)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h4 align="center">
+  Obrigado por conferir o projeto! <a href="https://www.linkedin.com/in/nadfelipe/">Entre em contato 💛</a>
+</h4>
+  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

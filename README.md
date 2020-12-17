@@ -20,7 +20,7 @@
   <img alt="GitHub repo license" src="https://img.shields.io/github/license/nadfelipe/comunikae?color=green">
 </p>
 
-## Confira o protótipo do projeto
+# Confira o protótipo do projeto
 https://comunikae.netlify.app/
 
 ## Instalando o projeto
@@ -48,7 +48,7 @@ Na pasta do projeto você deve instalar as dependências, então iniciar o proje
 ```
 Abra [http://localhost:3000](http://localhost:3000) para poder ver o projeto inicializado no navegador.
 
-# Licença
+## Licença
 [MIT License](/LICENSE)
 
 <h4 align="center">

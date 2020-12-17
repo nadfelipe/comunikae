@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/src/assets/img/comunikae_logo.svg" width='200px' />
+  <img src="/src/assets/img/comunikae_logo.svg" width='300px' />
 	
   <p align="center">
   Plataforma que busca desenvolver a comunicação e respeito às
@@ -52,7 +52,7 @@ Abra [http://localhost:3000](http://localhost:3000) para poder ver o projeto ini
 [MIT License](/LICENSE)
 
 <h4 align="center">
-  Obrigado por conferir o projeto! <a href="https://www.linkedin.com/in/nadfelipe/">Entre em contato 💛</a>
+  Obrigado por conferir o projeto!
 </h4>
   
 

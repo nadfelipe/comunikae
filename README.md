@@ -5,9 +5,6 @@
   Plataforma que busca desenvolver a comunicação e respeito às
   diferenças em alunos, através da gamificação!
   </p>
-  <p align="center">
-    <img src=".github/cover.png" width='900px' />
-  </p>
 </p>
 
 <p align="center">
@@ -40,7 +37,7 @@ Na pasta do projeto você deve instalar as dependências, então iniciar o proje
 **Usando npm**
 
 ```bash
-  # Instalando as dependencies
+  # Instalando as dependências
   ❯ npm install
 
   # Iniciando o projeto na versão de desenvolvimento
